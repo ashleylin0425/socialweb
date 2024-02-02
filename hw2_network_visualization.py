@@ -9,11 +9,15 @@ from matplotlib.pyplot import cm
 import numpy as np
 
 #Input edge list
+
 argv = sys.argv
 if len(argv) < 2:
 	print("Usage: # python %s filename" % argv[0])
+	print (argv)
 	quit()
 input_file = argv[1]
+
+print ("hi")
 
 dataFile = csv.reader(open(input_file))
 next(dataFile)
